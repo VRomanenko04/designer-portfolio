@@ -9,6 +9,8 @@ const Header = () => {
         visible: { opacity: 1 }
     };
 
+    const animationText = [...("Web portfolio")];
+
     return (
         <section className={styles.wrapper}>
             <div className={styles.container}>
@@ -28,13 +30,13 @@ const Header = () => {
                         animate="visible"
                         variants={{
                             visible: {
-                            transition: { staggerChildren: 0.07 }
+                                transition: { staggerChildren: 0.07 }
                             }
                         }}
                     >
-                        {[...("Web portfolio")].map((char, index) => (
+                        {animationText.map((char, index) => (
                             <motion.span key={index} variants={textVariants}>
-                            {char}
+                                {char}
                             </motion.span>
                         ))}
                     </motion.p>
