@@ -1,0 +1,46 @@
+@import '../../styles/var.scss';
+
+.wrapper {
+    background: $black;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.background__img {
+    position: absolute;
+    margin-right: 500px;
+}
+
+.small__container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 40vh;
+    z-index: 2;
+
+    img {
+        height: 55px;
+        width: 55px;
+    }
+
+    h1 {
+        color: $white;
+        font-weight: 600;
+        font-size: $bigFont;
+        margin-left: 5px;
+    }
+
+    p {
+        position: absolute;
+        top: 45px;
+        right: 0;
+        color: $white;
+        font-weight: 300;
+        font-size: $basicFont;
+    }
+}
