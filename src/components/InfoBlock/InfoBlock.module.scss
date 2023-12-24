@@ -68,3 +68,55 @@
         text-decoration: underline;
     }
 }
+
+// Стилизация модального окна
+.modal__window {
+    background-color: #060606;
+    height: 350px;
+    width: 80%;
+}
+
+.modal__wrapper {
+    color: $white;
+    position: relative;
+
+    .arrow {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        width: 45px;
+        height: 45px;
+        transform: rotate(180deg);
+        fill: $white;
+        cursor: pointer;
+    }
+}
+
+.modal__container {
+    padding: 45px 100px;
+}
+
+.modal__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    h3 {
+        margin-left: 10px;
+        font-size: $basicFont;
+        font-weight: 600;
+    }
+}
+
+.email {
+    font-size: $smallFont;
+    margin-bottom: 40px;
+}
+
+.modal__link {
+    font-size: $smallFont;
+
+    a {
+        color: #1665FF;
+    }
+}
