@@ -4,6 +4,11 @@ import smallRGB from '../../assets/smallRGB.svg';
 import { motion } from 'framer-motion';
 
 const Header = () => {
+    const textVariants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 }
+    };
+
     return (
         <section className={styles.wrapper}>
             <div className={styles.container}>
@@ -18,7 +23,21 @@ const Header = () => {
                 <div className={styles.small__container}>
                     <img src={smallRGB} alt="rgb image" />
                     <h1>Nazar Mukovnyn</h1>
-                    <p>Web portfolio</p>
+                    <motion.p
+                        initial="hidden"
+                        animate="visible"
+                        variants={{
+                            visible: {
+                            transition: { staggerChildren: 0.07 }
+                            }
+                        }}
+                    >
+                        {[...("Web portfolio")].map((char, index) => (
+                            <motion.span key={index} variants={textVariants}>
+                            {char}
+                            </motion.span>
+                        ))}
+                    </motion.p>
                 </div>
             </div>
         </section>
