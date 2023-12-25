@@ -1,0 +1,55 @@
+@import '../../styles/var.scss';
+
+.container {
+    background-color: $black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+button {
+    background: none;
+    color: $white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.typeBtn {
+    font-size: $basicFont;
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.selectedType {
+    text-decoration: underline;
+}
+
+// Переключение типа отображения 
+.smallSquares__btn {
+    height: 26px;
+    width: auto;
+    transition: all 0.5s;
+}
+
+.bigSquares__btn {
+    height: 26px;
+    width: auto;
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
+
+.squareBig__btn {
+    height: 26px;
+    width: auto;
+    transition: all 0.5s;
+}
+
+.squareSmall__btn {
+    height: 26px;
+    width: auto;
+    transform: scale(0.6);
+    transition: all 0.5s;
+}

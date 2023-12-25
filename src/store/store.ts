@@ -4,3 +4,5 @@ import { reducer as ProjectsReducer } from "./ProjectsTypeFilter/ProjectsTypeFil
 export const store = configureStore({
     reducer: ProjectsReducer
 })
+
+export type RootState = ReturnType<typeof ProjectsReducer>;

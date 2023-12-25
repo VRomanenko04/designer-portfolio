@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import InfoBlock from "./components/InfoBlock/InfoBlock";
+import Toolbar from "./components/Toolbar/Toolbar";
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       </header>
       <main>
         <InfoBlock />
+        <Toolbar />
       </main>
     </>
   )
