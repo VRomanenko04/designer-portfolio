@@ -12,27 +12,31 @@ export const projects = [
         types: ['Show all', '2D & 3D', 'Projects for clients'],
         shortDescription: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, earum accusamus officiis modi perferendis delectus voluptatibus libero, esse omnis voluptas tempore nemo at ipsam suscipit!',
         modalDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus perferendis, consectetur debitis tempore odio quidem fuga quasi officia nostrum molestiae sequi ipsum? Labore, quas commodi voluptatum quam rerum facere natus ipsum eveniet quis illum odio nobis mollitia ipsam officia libero amet cumque et deserunt? Mollitia.',
-        image: {project1Img}, 
+        image: project1Img, 
+        imageDescription: 'Lorem ipsum dolor sit.'
     },
     {
         title: 'Fonts',
         types: ['Show all', 'Typography', 'Personal Projects'],
         shortDescription: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, earum accusamus officiis modi perferendis delectus voluptatibus libero, esse omnis voluptas tempore nemo at ipsam suscipit!',
         modalDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus perferendis, consectetur debitis tempore odio quidem fuga quasi officia nostrum molestiae sequi ipsum? Labore, quas commodi voluptatum quam rerum facere natus ipsum eveniet quis illum odio nobis mollitia ipsam officia libero amet cumque et deserunt? Mollitia.',
-        image: {project2Img}, 
+        image: project2Img, 
+        imageDescription: 'Lorem ipsum dolor sit.'
     },
     {
         title: '3D animation',
         types: ['Show all', '2D & 3D', 'Personal Projects', 'Animations'],
         shortDescription: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, earum accusamus officiis modi perferendis delectus voluptatibus libero, esse omnis voluptas tempore nemo at ipsam suscipit!',
         modalDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus perferendis, consectetur debitis tempore odio quidem fuga quasi officia nostrum molestiae sequi ipsum? Labore, quas commodi voluptatum quam rerum facere natus ipsum eveniet quis illum odio nobis mollitia ipsam officia libero amet cumque et deserunt? Mollitia.',
-        image: {project3Img}, 
+        image: project3Img, 
+        imageDescription: 'Lorem ipsum dolor sit.'
     },
     {
         title: 'SpaceDev',
         types: ['Show all', 'UI/UX', '2D & 3D', 'Projects for clients'],
         shortDescription: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, earum accusamus officiis modi perferendis delectus voluptatibus libero, esse omnis voluptas tempore nemo at ipsam suscipit!',
         modalDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus perferendis, consectetur debitis tempore odio quidem fuga quasi officia nostrum molestiae sequi ipsum? Labore, quas commodi voluptatum quam rerum facere natus ipsum eveniet quis illum odio nobis mollitia ipsam officia libero amet cumque et deserunt? Mollitia.',
-        image: {project4Img}, 
+        image: project4Img, 
+        imageDescription: 'Lorem ipsum dolor sit.'
     },
 ]
