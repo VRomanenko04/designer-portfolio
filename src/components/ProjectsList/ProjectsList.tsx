@@ -18,9 +18,9 @@ const ProjectsList = () => {
         <section className={styles.wrapper}>
             <div className={chosenLook === 'small' ? styles.small__container : styles.big__container}>
                 {filteredProjects.map((project, index) => (
-                    <div key={index}>
+                    <div key={index} className={styles.project__container}>
                         <img src={project.image} alt={project.imageDescription} className={styles.background__img}/>
-                        <div>
+                        <div className={styles.content__position}>
                             <h2>{project.title}</h2>
                             <img src={arrow} alt="arrow" className={styles.arrow}/>
                         </div>
