@@ -22,6 +22,7 @@ const ProjectsList = () => {
                         <img src={project.image} alt={project.imageDescription} className={styles.background__img}/>
                         <div className={styles.content__position}>
                             <h2>{project.title}</h2>
+                            <p>{project.shortDescription}</p>
                             <img src={arrow} alt="arrow" className={styles.arrow}/>
                         </div>
                     </div>

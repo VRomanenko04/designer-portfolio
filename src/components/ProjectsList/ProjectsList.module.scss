@@ -6,7 +6,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px 0;
 }
 
 //Маленький внешний вид
@@ -16,6 +15,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     gap: 5px;
+    padding: 5px 0;
 
     .project__container {
         position: relative;
@@ -48,6 +48,10 @@
                 font-weight: 600;
                 font-size: $basicFont;
             }
+
+            p {
+                display: none;
+            }
         }
     }
 }
@@ -56,4 +60,48 @@
     width: 45px;
     height: 45px;
     cursor: pointer;
+}
+
+//Крупный внешний вид
+.big__container {
+    display: flex;
+    flex-direction: column;
+
+    .project__container {
+        display: flex;
+        flex-direction: row;
+
+        .background__img {
+            width: 50%;
+            height: 500px;
+        }
+
+        .content__position {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $black;
+            width: 50%;
+            padding-left: 30px;
+            color: $white;
+
+            h2 {
+                margin-bottom: 10px;
+                font-weight: 600;
+                font-size: $basicFont;
+            }
+
+            p {
+                font-size: $smallFont;
+                max-width: 80%;
+            }
+
+            .arrow {
+                position: absolute;
+                bottom: 20px;
+                right: 30px;
+            }
+        }
+    }
 }
