@@ -3,8 +3,24 @@ import { projects } from '../../projects';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
 import arrow from '../../assets/arrow_right_icon.svg';
+import smallRGB from '../../assets/smallRGB.svg';
+import ModalWindow from '../ModalWindow/ModalWindow';
+import { useState } from 'react';
+
+interface IProject {
+    title: string;
+    types: string[];
+    shortDescription: string;
+    modalDescription: string;
+    image: string;
+    imageDescription: string;
+}
+
 
 const ProjectsList = () => {
+    const [active, setActive] = useState(false);
+    const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
+
     const chosenType = useSelector((state: RootState) => state.projectsType);
     const chosenLook = useSelector((state: RootState) => state.projectsLook);
 
@@ -13,6 +29,11 @@ const ProjectsList = () => {
     }
 
     const filteredProjects = projects.filter(project => isChosenType(project.types));
+
+    const openModal = (project: IProject) => {
+        setSelectedProject(project);
+        setActive(true);
+    }
 
     return (
         <section className={styles.wrapper}>
@@ -23,11 +44,31 @@ const ProjectsList = () => {
                         <div className={styles.content__position}>
                             <h2>{project.title}</h2>
                             <p>{project.shortDescription}</p>
-                            <img src={arrow} alt="arrow" className={styles.arrow}/>
+                            <img src={arrow} alt="arrow" className={styles.arrow} onClick={() => openModal(project)}/>
                         </div>
                     </div>
                 ))}
             </div>
+            <ModalWindow active={active} setActive={setActive} extendClass={styles.modal__window}>
+                {selectedProject && (
+                    <div className={styles.modal__wrapper}>
+                        <div className={styles.modal__container}>
+                            <div className={styles.modal_img__container}>
+                                <img src={selectedProject.image} alt={selectedProject.imageDescription} />
+                            </div>
+                            <div className={styles.modal__information}>
+                                <div>
+                                    <img src={smallRGB} alt="RGB icon" />
+                                    <h6>{selectedProject.title}</h6>
+                                    <a href="##">Be</a>
+                                </div>
+                                <p>{selectedProject.shortDescription}</p>
+                                <p>{selectedProject.modalDescription}</p>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </ModalWindow>
         </section>
     )
 }
