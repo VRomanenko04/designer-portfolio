@@ -57,10 +57,13 @@ const ProjectsList = () => {
                                 <img src={selectedProject.image} alt={selectedProject.imageDescription} />
                             </div>
                             <div className={styles.modal__information}>
-                                <div>
-                                    <img src={smallRGB} alt="RGB icon" />
-                                    <h6>{selectedProject.title}</h6>
-                                    <a href="##">Be</a>
+                                <img src={arrow} alt="exit button" className={styles.modal__arrow} onClick={() => setActive(false)}/>
+                                <div className={styles.modal__title}>
+                                    <div>
+                                        <img src={smallRGB} alt="RGB icon" />
+                                        <h6>{selectedProject.title}</h6>
+                                    </div>
+                                    <a className={styles.modal__link} href="##">Be</a>
                                 </div>
                                 <p>{selectedProject.shortDescription}</p>
                                 <p>{selectedProject.modalDescription}</p>

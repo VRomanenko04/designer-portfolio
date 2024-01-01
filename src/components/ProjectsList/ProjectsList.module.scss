@@ -106,3 +106,80 @@
         }
     }
 }
+
+//Модальное окно
+.modal__wrapper {
+    width: 80vw;
+    height: 100vh;
+    background-color: $black;
+    color: $white;
+}
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_img__container {
+    width: 1422px;
+    height: 290px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: 290px;
+        width: auto;
+    }
+}
+
+.modal__information {
+    padding: 50px 120px;
+    position: relative;
+
+    .modal__arrow {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 50px;
+        left: 50px;
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+
+    p {
+        margin-top: 20px;
+        margin-left: 45px;
+        width: 70%;
+    }
+}
+
+.modal__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-bottom: 50px;
+
+    div {
+        display: flex;
+        align-items: center;
+
+        h6 {
+            font-size: $basicFont;
+            margin-left: 10px;
+        }
+    }
+}
+
+.modal__link {
+    width: 190px;
+    height: 36px;
+    border-radius: 5px;
+    background: #115EFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    text-decoration: none;
+}
