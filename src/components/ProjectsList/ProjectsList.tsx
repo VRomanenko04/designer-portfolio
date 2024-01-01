@@ -14,6 +14,7 @@ interface IProject {
     modalDescription: string;
     image: string;
     imageDescription: string;
+    link: string
 }
 
 
@@ -63,7 +64,7 @@ const ProjectsList = () => {
                                         <img src={smallRGB} alt="RGB icon" />
                                         <h6>{selectedProject.title}</h6>
                                     </div>
-                                    <a className={styles.modal__link} href="##">Be</a>
+                                    <a className={styles.modal__link} href={selectedProject.link} target='_blank'>Be</a>
                                 </div>
                                 <p>{selectedProject.shortDescription}</p>
                                 <p>{selectedProject.modalDescription}</p>
