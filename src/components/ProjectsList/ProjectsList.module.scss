@@ -19,7 +19,7 @@
 
     .project__container {
         position: relative;
-        width: 49.5vw;
+        width: 49.1vw;
         max-width: 1200px;
         max-height: 650px;
         height: 46vh;
@@ -70,6 +70,7 @@
     .project__container {
         display: flex;
         flex-direction: row;
+        padding-top: 5px;
 
         .background__img {
             width: 50%;
