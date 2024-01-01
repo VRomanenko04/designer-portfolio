@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import InfoBlock from "./components/InfoBlock/InfoBlock";
 import ProjectsList from "./components/ProjectsList/ProjectsList";
@@ -15,6 +16,9 @@ function App() {
         <Toolbar />
         <ProjectsList />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
