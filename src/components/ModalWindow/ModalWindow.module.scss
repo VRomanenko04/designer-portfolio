@@ -18,12 +18,3 @@
         pointer-events: all;
     }
 }
-
-.modal__content {
-    transform: scale(0.5);
-    transition: 0.4s all;
-
-    &.active {
-        transform: scale(1);
-    }
-}
