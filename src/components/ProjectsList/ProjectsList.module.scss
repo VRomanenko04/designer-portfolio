@@ -1,7 +1,7 @@
 @import '../../styles/var.scss';
 
 .wrapper {
-    background-color: $white;
+    background-color: $black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,8 +14,7 @@
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
-    gap: 5px;
-    padding-top: 5px;
+    border: 2.5px solid #FFF;
 
     .project__container {
         position: relative;
@@ -23,6 +22,7 @@
         max-width: 1200px;
         max-height: 650px;
         height: 46vh;
+        border: 2.5px solid #FFF;
 
         .background__img {
             position: absolute;
@@ -66,11 +66,14 @@
 .big__container {
     display: flex;
     flex-direction: column;
+    border-top: 2.5px solid #FFF;
+    border-bottom: 2.5px solid #FFF;
 
     .project__container {
         display: flex;
         flex-direction: row;
-        padding-top: 5px;
+        border-top: 2.5px solid #FFF;
+        border-bottom: 2.5px solid #FFF;
 
         .background__img {
             width: 50%;
@@ -100,7 +103,7 @@
 
             .arrow {
                 position: absolute;
-                bottom: 20px;
+                bottom: 30px;
                 right: 30px;
             }
         }
@@ -111,7 +114,7 @@
 .modal__wrapper {
     width: 80vw;
     height: 100vh;
-    background-color: $black;
+    background-color: $gayblack;
     color: $white;
 }
 
