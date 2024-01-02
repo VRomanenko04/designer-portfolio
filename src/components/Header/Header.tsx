@@ -30,7 +30,7 @@ const Header = () => {
                         animate="visible"
                         variants={{
                             visible: {
-                                transition: { staggerChildren: 0.07 }
+                                transition: { staggerChildren: 0.07, delayChildren: 0.3 }
                             }
                         }}
                     >
