@@ -8,13 +8,16 @@ import ModalWindow from '../ModalWindow/ModalWindow';
 import { useState } from 'react';
 
 interface IProject {
-    title: string;
-    types: string[];
-    shortDescription: string;
-    modalDescription: string;
-    image: string;
-    imageDescription: string;
-    link: string
+    title: string,
+    types: string[],
+    shortDescription: string,
+    modalDescription: string,
+    image: string,
+    imageDescription: string,
+    modalImage: string,
+    modalImageDescription: string,
+    link: string,
+    modalBackgroundColor: string,
 }
 
 
@@ -54,8 +57,8 @@ const ProjectsList = () => {
                 {selectedProject && (
                     <div className={styles.modal__wrapper}>
                         <div className={styles.modal__container}>
-                            <div className={styles.modal_img__container}>
-                                <img src={selectedProject.image} alt={selectedProject.imageDescription} />
+                            <div className={styles.modal_img__container} style={{ background: selectedProject.modalBackgroundColor }}>
+                                <img src={selectedProject.modalImage} alt={selectedProject.modalDescription} />
                             </div>
                             <div className={styles.modal__information}>
                                 <img src={arrow} alt="exit button" className={styles.modal__arrow} onClick={() => setActive(false)}/>
