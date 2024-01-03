@@ -18,6 +18,7 @@
 
     .project__container {
         position: relative;
+        cursor: pointer;
         width: 49.1vw;
         max-width: 1200px;
         max-height: 650px;
@@ -59,7 +60,6 @@
 .arrow {
     width: 40px;
     height: 40px;
-    cursor: pointer;
 }
 
 //Крупный внешний вид
@@ -107,6 +107,7 @@
                 position: absolute;
                 bottom: 30px;
                 right: 30px;
+                cursor: pointer;
             }
         }
     }

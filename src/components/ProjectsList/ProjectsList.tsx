@@ -43,12 +43,12 @@ const ProjectsList = () => {
         <section className={styles.wrapper}>
             <div className={chosenLook === 'small' ? styles.small__container : styles.big__container}>
                 {filteredProjects.map((project, index) => (
-                    <div key={index} className={styles.project__container}>
+                    <div key={index} className={styles.project__container} onClick={() => chosenLook === 'small' && openModal(project)}>
                         <img src={project.image} alt={project.imageDescription} className={styles.background__img}/>
                         <div className={styles.content__position}>
                             <h2>{project.title}</h2>
                             <p>{project.shortDescription}</p>
-                            <img src={arrow} alt="arrow" className={styles.arrow} onClick={() => openModal(project)}/>
+                            <img src={arrow} alt="arrow" className={styles.arrow} onClick={() => chosenLook === 'big' && openModal(project)}/>
                         </div>
                     </div>
                 ))}
