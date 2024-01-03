@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
-    <defs>
-        <style>
-            .cls-1 {
-                fill: #fff;
-                stroke-width: 0px;
-            }
-        </style>
-    </defs>
-    <rect class="cls-1" x="5" y="5" width="8" height="8" rx="2" ry="2"/>
-    <rect class="cls-1" x="16" y="5" width="8" height="8" rx="2" ry="2"/>
-    <rect class="cls-1" x="5" y="16" width="8" height="8" rx="2" ry="2"/>
-    <rect class="cls-1" x="16" y="16" width="8" height="8" rx="2" ry="2"/>
+<svg id="_Слой_1" data-name=" Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" y="0" width="11" height="11" rx="3" ry="3"/>
+  <rect class="cls-1" x="16" y="0" width="11" height="11" rx="3" ry="3"/>
+  <rect class="cls-1" y="16" width="11" height="11" rx="3" ry="3"/>
+  <rect class="cls-1" x="16" y="16" width="11" height="11" rx="3" ry="3"/>
 </svg>
