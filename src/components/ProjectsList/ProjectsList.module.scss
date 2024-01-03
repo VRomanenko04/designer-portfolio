@@ -34,7 +34,7 @@
 
         .content__position {
             position: absolute;
-            bottom: 0;
+            bottom: 15px;
             width: 95%;
             margin-left: 2.5%;
             z-index: 2;
@@ -57,8 +57,8 @@
 }
 
 .arrow {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 

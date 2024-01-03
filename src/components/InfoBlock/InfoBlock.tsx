@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './InfoBlock.module.scss';
 import ModalWindow from '../ModalWindow/ModalWindow';
-import arrow from '../../assets/arrow_right_icon.svg';
+import arrow from '../../assets/arrow_icon.svg';
 import smallRGB from '../../assets/smallRGB.svg';
 
 const InfoBlock = () => {

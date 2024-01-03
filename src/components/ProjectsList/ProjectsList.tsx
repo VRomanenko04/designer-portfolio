@@ -2,7 +2,7 @@ import styles from './ProjectsList.module.scss';
 import { projects } from '../../projects';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
-import arrow from '../../assets/arrow_right_icon.svg';
+import arrow from '../../assets/arrow_icon.svg';
 import smallRGB from '../../assets/smallRGB.svg';
 import ModalWindow from '../ModalWindow/ModalWindow';
 import { useState } from 'react';
