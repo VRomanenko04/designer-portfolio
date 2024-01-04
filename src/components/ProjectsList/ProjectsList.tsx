@@ -6,6 +6,7 @@ import arrow from '../../assets/arrow_icon.svg';
 import smallRGB from '../../assets/smallRGB.svg';
 import ModalWindow from '../ModalWindow/ModalWindow';
 import { useState } from 'react';
+import BehanceLogo from '../../assets/Behance_logo.svg';
 
 interface IProject {
     title: string,
@@ -67,7 +68,9 @@ const ProjectsList = () => {
                                         <img src={smallRGB} alt="RGB icon" />
                                         <h6>{selectedProject.title}</h6>
                                     </div>
-                                    <a className={styles.modal__link} href={selectedProject.link} target='_blank'>Be</a>
+                                    <a className={styles.modal__link} href={selectedProject.link} target='_blank'>
+                                        <img src={BehanceLogo} alt="Link to behance" />
+                                    </a>
                                 </div>
                                 <p>{selectedProject.shortDescription}</p>
                                 <p>{selectedProject.modalDescription}</p>
