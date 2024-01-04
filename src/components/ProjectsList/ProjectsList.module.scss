@@ -18,12 +18,22 @@
 
     .project__container {
         position: relative;
+        overflow: hidden;
         cursor: pointer;
         width: 49.1vw;
         max-width: 1200px;
         max-height: 650px;
         height: 46vh;
         border: 2.5px solid #FFF;
+
+        &:hover {
+            .content__position .description {
+                transform: translateY(0px);
+            }
+            .content__position h2 {
+                transform: translateY(-50px);
+            }
+        }
 
         .background__img {
             position: absolute;
@@ -48,10 +58,15 @@
                 color: $white;
                 font-weight: 600;
                 font-size: $basicFont;
+                transition: all 0.3s;
             }
 
-            p {
-                display: none;
+            .description {
+                color: $white;
+                position: absolute;
+                max-width: 80%;
+                transform: translateY(60px);
+                transition: all 0.3s;
             }
         }
     }
