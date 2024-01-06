@@ -70,6 +70,29 @@
     }
 }
 
+@media screen and (max-width: 540px) {
+    .wrapper {
+        height: auto;
+    }
+
+    .container h1 {
+        font-size: 140px;
+        padding-top: 50px;
+    }
+
+    .info__text {
+        margin-top: 90px;
+        font-size: $smallFont;
+        max-width: 90%;
+        text-align: center;
+    }
+    
+    .infoblock__footer {
+        margin-top: 150px;
+        font-size: $ultraSmallFont;
+    }
+}
+
 // Стилизация модального окна
 .modal__window {
     background-color: $gayblack;
@@ -118,5 +141,34 @@
 
     a {
         color: #1665FF;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .modal__wrapper .arrow {
+        top: 38px;
+        width: 33px;
+        height: 33px;
+    }
+
+    .modal__window {
+        width: 100%;
+    }
+
+    .modal__container {
+        padding: 35px 40px;
+    }
+
+    .modal__title {
+        margin-left: 30px;
+
+        h3 {
+            font-size: $smallFont;
+        }
+    }
+
+    .email,
+    .modal__link {
+        font-size: $ultraSmallFont;
     }
 }
