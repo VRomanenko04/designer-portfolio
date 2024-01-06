@@ -12,6 +12,7 @@
 .container {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .background__img {
@@ -45,5 +46,13 @@
         color: $white;
         font-weight: 300;
         font-size: $basicFont;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .background__img {
+        margin: 0;
+        width: 150vw;
+        height: auto;
     }
 }
