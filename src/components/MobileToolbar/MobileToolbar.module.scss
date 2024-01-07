@@ -1,0 +1,38 @@
+@import '../../styles/var.scss';
+
+.container {
+    background-color: $gayblack;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.toolbar__slider {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 10px;
+        width: 170px;
+    }
+}
+
+.typeBtn {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.right__arrow,
+.left__arrow {
+    cursor: pointer;
+}
+
+.right__arrow {
+    transform: rotate(180deg);
+}

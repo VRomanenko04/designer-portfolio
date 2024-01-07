@@ -4,18 +4,23 @@
     .desktop {
         display: none;
     }
+
+    .typeBtn {
+        font-size: 14px;
+        font-weight: 500;
+    }
 }
 
 @media screen and (min-width: 1431px) {
     .mobile {
         display: none;
     }
-}
 
-.typeBtn {
-    font-size: $basicFont;
-    font-weight: 500;
-    margin: 0 20px;
+    .typeBtn {
+        font-size: $basicFont;
+        font-weight: 500;
+        margin: 0 20px;
+    }
 }
 
 .selectedType {

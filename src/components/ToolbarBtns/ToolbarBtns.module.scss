@@ -23,3 +23,21 @@
     transform: scale(0.6);
     transition: all 0.3s;
 }
+
+@media screen and (max-width: 600px) {
+    .smallSquares__btn {
+        height: 20px;
+    }
+    
+    .bigSquares__btn {
+        height: 20px;
+    }
+    
+    .squareBig__btn {
+        height: 22px;
+    }
+    
+    .squareSmall__btn {
+        height: 22px;
+    }
+}

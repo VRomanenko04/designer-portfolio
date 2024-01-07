@@ -4,7 +4,7 @@ import MobileToolbar from '../MobileToolbar/MobileToolbar';
 import styles from './Toolbar.module.scss'
 import { RootState } from '../../store/store';
 import { actions } from '../../store/ProjectsTypeFilter/ProjectsTypeFilter.slice';
-import { types } from '../../projects';
+import { types, mobileTypes } from '../../projects';
 
 const Toolbar = () => {
     const chosenType = useSelector((state: RootState) => state.projectsType);
@@ -34,7 +34,14 @@ const Toolbar = () => {
                 />
             </section>
             <section className={styles.mobile}>
-                <MobileToolbar /> 
+                <MobileToolbar 
+                    typesList={mobileTypes}
+                    chosenLook={chosenLook}
+                    chosenType={chosenType}
+                    handleOtherLook={handleOtherLook}
+                    handleOtherType={handleOtherType}
+                    activeType={activeTypeStyle}
+                /> 
             </section>
         </>
     )

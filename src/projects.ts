@@ -5,11 +5,12 @@ import project4Img from './assets/project_main_img_4.png';
 
 
 export const types = ['Show all', 'Typography', '2D & 3D', 'Animations', 'UI/UX', 'Personal Projects', 'Projects for clients', 'Other'];
+export const mobileTypes = ['Show all', 'Typogr..', '2D & 3D', 'Animations', 'UI/UX', 'Personal..', 'Commercial', 'Other'];
 
 export const projects = [
     {
         title: 'Logo',
-        types: ['Show all', '2D & 3D', 'Projects for clients'],
+        types: ['Show all', '2D & 3D', 'Projects for clients', 'Commercial'],
         shortDescription: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, earum accusamus officiis modi perferendis delectus voluptatibus libero, esse omnis voluptas tempore nemo at ipsam suscipit!',
         modalDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus perferendis, consectetur debitis tempore odio quidem fuga quasi officia nostrum molestiae sequi ipsum? Labore, quas commodi voluptatum quam rerum facere natus ipsum eveniet quis illum odio nobis mollitia ipsam officia libero amet cumque et deserunt? Mollitia.',
         image: project1Img, 
@@ -21,7 +22,7 @@ export const projects = [
     },
     {
         title: 'Fonts',
-        types: ['Show all', 'Typography', 'Personal Projects'],
+        types: ['Show all', 'Typography', 'Typogr..', 'Personal Projects', 'Personal..'],
         shortDescription: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, earum accusamus officiis modi perferendis delectus voluptatibus libero, esse omnis voluptas tempore nemo at ipsam suscipit!',
         modalDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus perferendis, consectetur debitis tempore odio quidem fuga quasi officia nostrum molestiae sequi ipsum? Labore, quas commodi voluptatum quam rerum facere natus ipsum eveniet quis illum odio nobis mollitia ipsam officia libero amet cumque et deserunt? Mollitia.',
         image: project2Img, 
@@ -33,7 +34,7 @@ export const projects = [
     },
     {
         title: '3D animation',
-        types: ['Show all', '2D & 3D', 'Personal Projects', 'Animations'],
+        types: ['Show all', '2D & 3D', 'Personal Projects', 'Personal..', 'Animations'],
         shortDescription: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, earum accusamus officiis modi perferendis delectus voluptatibus libero, esse omnis voluptas tempore nemo at ipsam suscipit!',
         modalDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus perferendis, consectetur debitis tempore odio quidem fuga quasi officia nostrum molestiae sequi ipsum? Labore, quas commodi voluptatum quam rerum facere natus ipsum eveniet quis illum odio nobis mollitia ipsam officia libero amet cumque et deserunt? Mollitia.',
         image: project3Img, 
@@ -45,7 +46,7 @@ export const projects = [
     },
     {
         title: 'SpaceDev',
-        types: ['Show all', 'UI/UX', '2D & 3D', 'Projects for clients'],
+        types: ['Show all', 'UI/UX', '2D & 3D', 'Projects for clients', 'Commercial'],
         shortDescription: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, earum accusamus officiis modi perferendis delectus voluptatibus libero, esse omnis voluptas tempore nemo at ipsam suscipit!',
         modalDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus perferendis, consectetur debitis tempore odio quidem fuga quasi officia nostrum molestiae sequi ipsum? Labore, quas commodi voluptatum quam rerum facere natus ipsum eveniet quis illum odio nobis mollitia ipsam officia libero amet cumque et deserunt? Mollitia.',
         image: project4Img, 

@@ -1,7 +1,7 @@
 import ToolbarBtns from '../ToolbarBtns/ToolbarBtns';
 import styles from './DesktopToolbar.module.scss';
 
-interface IToolbar {
+export interface IToolbar {
     chosenLook: string,
     chosenType: string,
     handleOtherType: (type: string) => void,
