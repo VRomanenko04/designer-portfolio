@@ -1,20 +1,15 @@
 @import '../../styles/var.scss';
 
-.container {
-    background-color: $gayblack;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
+@media screen and (max-width: 1430px) {
+    .desktop {
+        display: none;
+    }
 }
 
-button {
-    background: none;
-    color: $white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+@media screen and (min-width: 1431px) {
+    .mobile {
+        display: none;
+    }
 }
 
 .typeBtn {
@@ -26,31 +21,4 @@ button {
 .selectedType {
     text-decoration: underline;
     font-weight: 600;
-}
-
-// Переключение типа отображения 
-.smallSquares__btn {
-    height: 22px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-.bigSquares__btn {
-    height: 22px;
-    width: auto;
-    transform: scale(1.15);
-    transition: all 0.3s;
-}
-
-.squareBig__btn {
-    height: 24px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-.squareSmall__btn {
-    height: 24px;
-    width: auto;
-    transform: scale(0.6);
-    transition: all 0.3s;
 }

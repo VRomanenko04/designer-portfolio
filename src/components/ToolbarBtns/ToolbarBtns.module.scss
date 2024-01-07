@@ -1,0 +1,25 @@
+.smallSquares__btn {
+    height: 22px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.bigSquares__btn {
+    height: 22px;
+    width: auto;
+    transform: scale(1.15);
+    transition: all 0.3s;
+}
+
+.squareBig__btn {
+    height: 24px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.squareSmall__btn {
+    height: 24px;
+    width: auto;
+    transform: scale(0.6);
+    transition: all 0.3s;
+}
