@@ -1,6 +1,6 @@
 @import '../../styles/var.scss';
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 970px) {
     .desktop {
         display: none;
     }
@@ -11,7 +11,7 @@
     }
 }
 
-@media screen and (min-width: 1431px) {
+@media screen and (min-width: 971px) {
     .mobile {
         display: none;
     }
@@ -22,6 +22,29 @@
         margin: 0 20px;
     }
 }
+
+
+@media screen and (min-width: 600px) and (max-width: 970px) {
+    .typeBtn {
+        font-size: $basicFont !important;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 971px) and (max-width: 1150px) {
+    .typeBtn {
+        font-size: 14px !important;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1400px) {
+    .typeBtn {
+        font-size: $smallFont !important;
+        font-weight: 500;
+    }
+}
+
 
 .selectedType {
     text-decoration: underline;

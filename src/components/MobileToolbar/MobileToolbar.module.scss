@@ -36,3 +36,14 @@
 .right__arrow {
     transform: rotate(180deg);
 }
+
+@media screen and (min-width: 600px) and (max-width: 970px) {
+    .typeBtn {
+        font-size: $basicFont;
+        font-weight: 500;
+    }
+
+    .toolbar__slider div {
+        width: 290px;
+    }
+}
