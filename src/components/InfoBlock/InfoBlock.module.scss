@@ -37,6 +37,7 @@
     font-size: $semiBigFont;
     font-weight: 500;
     margin-top: 130px;
+    max-width: 90%;
 
     span {
         text-decoration: underline;
@@ -83,7 +84,6 @@
     .info__text {
         margin-top: 90px;
         font-size: $smallFont;
-        max-width: 90%;
         text-align: center;
     }
     
@@ -92,6 +92,16 @@
         font-size: $ultraSmallFont;
     }
 }
+
+@media screen and (min-width: 541px) and (max-width: 940px) {
+    .container h1 {
+        font-size: 200px;
+    }
+    .info__text {
+        text-align: center;
+    }
+}
+
 
 // Стилизация модального окна
 .modal__window {
