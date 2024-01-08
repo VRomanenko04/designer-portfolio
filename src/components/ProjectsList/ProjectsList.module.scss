@@ -8,6 +8,11 @@
     justify-content: center;
 }
 
+.arrow {
+    width: 40px;
+    height: 40px;
+}
+
 //Маленький внешний вид
 .small__container {
     display: grid;
@@ -20,7 +25,7 @@
         position: relative;
         overflow: hidden;
         cursor: pointer;
-        width: 49.1vw;
+        width: 49vw;
         max-width: 1200px;
         max-height: 650px;
         height: 46vh;
@@ -65,17 +70,41 @@
                 color: $white;
                 position: absolute;
                 max-width: 80%;
-                transform: translateY(60px);
+                transform: translateY(90px);
                 transition: all 0.3s;
             }
         }
     }
 }
 
-.arrow {
-    width: 40px;
-    height: 40px;
+@media screen and (max-width: 750px) {
+    .small__container {
+        grid-template-columns: repeat(1, 2fr);
+
+        .project__container {
+            width: calc(100vw - 30px);
+
+            .content__position {
+                bottom: 5px;
+
+                .description{
+                    display: none;
+                }
+
+                h2 {
+                    transition: none;
+                }
+            } 
+
+            &:hover {
+                .content__position h2 {
+                    transform: translateY(0px);
+                }
+            }
+        }
+    }
 }
+
 
 //Крупный внешний вид
 .big__container {
@@ -113,7 +142,7 @@
                 font-size: $basicFont;
             }
 
-            p {
+            .description {
                 font-size: $smallFont;
                 max-width: 80%;
             }
@@ -127,6 +156,39 @@
         }
     }
 }
+
+@media screen and (max-width: 750px) {
+    .big__container {
+        .project__container {
+            .background__img {
+                height: 200px;
+            }
+
+            .content__position {
+                padding-left: 0;
+                flex-direction: row;
+                align-items: center;
+        
+                .description {
+                    display: none;
+                }
+
+                h2 {
+                    font-size: $smallFont;
+                }
+        
+                .arrow {
+                    position: initial;
+                    width: 30px;
+                    height: auto;
+                    margin-bottom: 8px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
 
 //Модальное окно
 .modal__wrapper {
