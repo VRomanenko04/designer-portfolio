@@ -25,7 +25,7 @@
         position: relative;
         overflow: hidden;
         cursor: pointer;
-        width: 49vw;
+        width: calc(50vw - 20px);
         max-width: 1200px;
         max-height: 650px;
         height: 46vh;
@@ -212,6 +212,7 @@
     img {
         height: 290px;
         width: auto;
+        max-width: 100%;
     }
 }
 
@@ -264,4 +265,50 @@
     justify-content: center;
     color: $white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+    .modal__wrapper {
+        width: 100vw;
+    }
+
+    .modal__information {
+        padding: 30px 20px;
+
+        .modal__arrow {
+            width: 30px;
+            height: auto;
+            top: 35px;
+            left: 20px;
+        }
+    
+        p {
+            margin-top: 15px;
+            margin-left: 5px;
+            width: 95%;
+        }
+    }
+
+    .modal__title {
+        margin-right: 20px;
+        margin-bottom: 40px;
+    
+        div {
+            margin-left: 40px;
+    
+            h6 {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .modal__link {
+        width: 115px;
+        height: 35px;
+
+        img {
+            height: 22px;
+            width: auto;
+        }
+    }
 }
