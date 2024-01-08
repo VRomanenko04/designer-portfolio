@@ -1,0 +1,123 @@
+@import '../../styles/var.scss';
+
+.modal__wrapper {
+    width: 80vw;
+    height: 100vh;
+    background-color: $gayblack;
+    color: $white;
+}
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_img__container {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: 290px;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+.modal__information {
+    padding: 50px 120px;
+    position: relative;
+
+    .modal__arrow {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 50px;
+        left: 50px;
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+
+    p {
+        margin-top: 20px;
+        margin-left: 45px;
+        width: 70%;
+    }
+}
+
+.modal__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+    div {
+        display: flex;
+        align-items: center;
+
+        h6 {
+            font-size: $basicFont;
+            margin-left: 10px;
+        }
+    }
+}
+
+.modal__link {
+    width: 190px;
+    height: 36px;
+    border-radius: 5px;
+    background: #115EFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+    .modal__wrapper {
+        width: 100vw;
+    }
+
+    .modal__information {
+        padding: 30px 20px;
+
+        .modal__arrow {
+            width: 30px;
+            height: auto;
+            top: 35px;
+            left: 20px;
+        }
+    
+        p {
+            margin-top: 15px;
+            margin-left: 5px;
+            width: 95%;
+        }
+    }
+
+    .modal__title {
+        margin-right: 20px;
+        margin-bottom: 40px;
+    
+        div {
+            margin-left: 40px;
+    
+            h6 {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .modal__link {
+        width: 115px;
+        height: 35px;
+
+        img {
+            height: 22px;
+            width: auto;
+        }
+    }
+}

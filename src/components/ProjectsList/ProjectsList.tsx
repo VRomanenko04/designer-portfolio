@@ -3,12 +3,11 @@ import { projects } from '../../projects';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
 import arrow from '../../assets/arrow_icon.svg';
-import smallRGB from '../../assets/smallRGB.svg';
-import ModalWindow from '../ModalWindow/ModalWindow';
 import { useState } from 'react';
-import BehanceLogo from '../../assets/Behance_logo.svg';
+import ProjectModalWindow from '../ProjectModalWindow/ProjectModalWindow';
 
-interface IProject {
+
+export interface IProject {
     title: string,
     types: string[],
     shortDescription: string,
@@ -54,31 +53,11 @@ const ProjectsList = () => {
                     </div>
                 ))}
             </div>
-            <ModalWindow active={active} setActive={setActive} extendClass={styles.modal__window}>
-                {selectedProject && (
-                    <div className={styles.modal__wrapper}>
-                        <div className={styles.modal__container}>
-                            <div className={styles.modal_img__container} style={{ background: selectedProject.modalBackgroundColor }}>
-                                <img src={selectedProject.modalImage} alt={selectedProject.modalDescription} />
-                            </div>
-                            <div className={styles.modal__information}>
-                                <img src={arrow} alt="exit button" className={styles.modal__arrow} onClick={() => setActive(false)}/>
-                                <div className={styles.modal__title}>
-                                    <div>
-                                        <img src={smallRGB} alt="RGB icon" />
-                                        <h6>{selectedProject.title}</h6>
-                                    </div>
-                                    <a className={styles.modal__link} href={selectedProject.link} target='_blank'>
-                                        <img src={BehanceLogo} alt="Link to behance" />
-                                    </a>
-                                </div>
-                                <p>{selectedProject.shortDescription}</p>
-                                <p>{selectedProject.modalDescription}</p>
-                            </div>
-                        </div>
-                    </div>
-                )}
-            </ModalWindow>
+            <ProjectModalWindow 
+                active={active}
+                setActive={setActive}
+                selectedProject={selectedProject}
+            />
         </section>
     )
 }
