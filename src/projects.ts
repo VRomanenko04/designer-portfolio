@@ -18,7 +18,7 @@ export const projects = [
         modalImage: project1Img,
         modalImageDescription: 'Lorem ipsum dolor sit.',
         link: 'https://www.behance.net/gallery/166320053/text-stylesation',
-        modalBackgroundColor: '#D9D9D9'
+        modalBackgroundColor: '#FF1E6D'
     },
     {
         title: 'Fonts',
