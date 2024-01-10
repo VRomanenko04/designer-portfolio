@@ -10,11 +10,17 @@ const MobileToolbar = ({ chosenLook, chosenType, handleOtherType, handleOtherLoo
     const [startIndex, setStartIndex] = useState(0);
 
     const handleNext = () => {
-        setStartIndex((prevIndex: number) => (prevIndex + 1) % typesList.length);
+        const newIndex = startIndex + itemsPerPage;
+        if (newIndex < typesList.length) {
+            setStartIndex(newIndex);
+        }
     };
 
     const handlePrev = () => {
-        setStartIndex((prevIndex: number) => (prevIndex - 1 + typesList.length) % typesList.length);
+        const newIndex = startIndex - itemsPerPage;
+        if (newIndex >= 0) {
+            setStartIndex(newIndex);
+        }
     };
 
     const visibleTypes = typesList.slice(startIndex, startIndex + itemsPerPage);
@@ -22,7 +28,11 @@ const MobileToolbar = ({ chosenLook, chosenType, handleOtherType, handleOtherLoo
     return (
         <section className={styles.container}>
             <div className={styles.toolbar__slider}>
-                <button onClick={handlePrev} className={styles.left__arrow}>
+                <button 
+                    onClick={handlePrev} 
+                    className={`${styles.left__arrow} ${startIndex === 0 ? styles.disabledArrow : ''}`} 
+                    disabled={startIndex === 0}
+                >
                     <img src={arrow} alt="left arrow" />
                 </button>
                 <div>
@@ -36,7 +46,11 @@ const MobileToolbar = ({ chosenLook, chosenType, handleOtherType, handleOtherLoo
                         </button>
                     ))}
                 </div>
-                <button onClick={handleNext} className={styles.right__arrow}>
+                <button 
+                    onClick={handleNext} 
+                    className={`${styles.right__arrow} ${startIndex + itemsPerPage >= typesList.length ? styles.disabledArrow : ''}`}
+                    disabled={startIndex + itemsPerPage >= typesList.length}
+                >
                     <img src={arrow} alt="right arrow" />
                 </button>
             </div>
