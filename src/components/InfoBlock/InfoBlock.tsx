@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styles from './InfoBlock.module.scss';
 import ModalWindow from '../ModalWindow/ModalWindow';
-import arrow from '../../assets/arrow_icon.svg';
-import smallRGB from '../../assets/smallRGB.svg';
+import arrow from '../../assets/OtherAssets/arrow_icon.svg';
+import smallRGB from '../../assets/OtherAssets/smallRGB.svg';
 
 const InfoBlock = () => {
     const [active, setActive] = useState(false);
@@ -32,7 +32,7 @@ const InfoBlock = () => {
                             <h3>Nazar Mukovnyn</h3>
                         </div>
                         <div>
-                            <p className={styles.email}>Email - nazarmukovnin132@gmail.com</p>
+                            {/* <p className={styles.email}>Email - nazarmukovnin132@gmail.com</p> */}
                             <p className={styles.modal__link} >Linkedin - <a target="_blank" href="https://linkedin.com/in/nazarmukovnin">linkedin.com/in/nazarmukovnin</a></p>
                             <p className={styles.modal__link} >Behance - <a target="_blank" href="https://behance.net/N_Muk">behance.net/N_Muk</a></p>
                         </div>

@@ -1,7 +1,7 @@
 import styles from './ToolbarBtns.module.scss';
-import Square from '../../assets/square.svg';
-import FourSquares from '../../assets/small_four_squares.svg';
-import BigFourSquares from '../../assets/big_four_squares.svg';
+import Square from '../../assets/OtherAssets/square.svg';
+import FourSquares from '../../assets/OtherAssets/small_four_squares.svg';
+import BigFourSquares from '../../assets/OtherAssets/big_four_squares.svg';
 
 interface IToolbarBtns {
     handleOtherLook: (type: string) => void,

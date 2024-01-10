@@ -1,6 +1,6 @@
 import styles from './Header.module.scss';
-import bigRGB from '../../assets/bigRGBblur.svg';
-import smallRGB from '../../assets/smallRGB.svg';
+import bigRGB from '../../assets/OtherAssets/bigRGBblur.svg';
+import smallRGB from '../../assets/OtherAssets/smallRGB.svg';
 import { motion } from 'framer-motion';
 
 const Header = () => {

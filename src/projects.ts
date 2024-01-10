@@ -1,7 +1,7 @@
-import project1Img from './assets/project_main_img_1.png';
-import project2Img from './assets/project_main_img_2.png';
-import project3Img from './assets/project_main_img_3.png';
-import project4Img from './assets/project_main_img_4.png';
+import project1Img from './assets/ProjectsImages/project_main_img_1.png';
+import project2Img from './assets/ProjectsImages/project_main_img_2.png';
+import project3Img from './assets/ProjectsImages/project_main_img_3.png';
+import project4Img from './assets/ProjectsImages/project_main_img_4.png';
 
 
 export const types = ['Show all', 'Typography', '2D & 3D', 'Animations', 'UI/UX', 'Personal Projects', 'Projects for clients', 'Other'];

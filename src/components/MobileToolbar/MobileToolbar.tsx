@@ -1,7 +1,7 @@
 import { IToolbar } from '../DesktopToolbar/DesktopToolbar';
 import ToolbarBtns from '../ToolbarBtns/ToolbarBtns';
 import styles from './MobileToolbar.module.scss';
-import arrow from '../../assets/small-arrow.svg';
+import arrow from '../../assets/OtherAssets/small-arrow.svg';
 import { useState } from 'react';
 
 const itemsPerPage = 2;
@@ -10,14 +10,14 @@ const MobileToolbar = ({ chosenLook, chosenType, handleOtherType, handleOtherLoo
     const [startIndex, setStartIndex] = useState(0);
 
     const handleNext = () => {
-        const newIndex = startIndex + itemsPerPage;
+        const newIndex = startIndex + 1;
         if (newIndex < typesList.length) {
             setStartIndex(newIndex);
         }
     };
 
     const handlePrev = () => {
-        const newIndex = startIndex - itemsPerPage;
+        const newIndex = startIndex - 1;
         if (newIndex >= 0) {
             setStartIndex(newIndex);
         }

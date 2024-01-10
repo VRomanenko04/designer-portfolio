@@ -1,9 +1,9 @@
 import ModalWindow from '../ModalWindow/ModalWindow';
 import styles from './ProjectModalWindow.module.scss';
-import BehanceLogo from '../../assets/Behance_logo.svg';
-import smallRGB from '../../assets/smallRGB.svg';
+import BehanceLogo from '../../assets/OtherAssets/Behance_logo.svg';
+import smallRGB from '../../assets/OtherAssets/smallRGB.svg';
 import { IProject } from '../ProjectsList/ProjectsList';
-import arrow from '../../assets/arrow_icon.svg';
+import arrow from '../../assets/OtherAssets/arrow_icon.svg';
 
 interface IModal {
     active: boolean,
