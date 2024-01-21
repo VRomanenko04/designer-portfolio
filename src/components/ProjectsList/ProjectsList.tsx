@@ -1,24 +1,10 @@
 import styles from './ProjectsList.module.scss';
-import { projects } from '../../projects';
+import { IProject, projects } from '../../projects';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
 import arrow from '../../assets/OtherAssets/arrow_icon.svg';
 import { useState } from 'react';
 import ProjectModalWindow from '../ProjectModalWindow/ProjectModalWindow';
-
-
-export interface IProject {
-    title: string,
-    types: string[],
-    shortDescription: string,
-    modalDescription: string,
-    image: string,
-    imageDescription: string,
-    modalImage: string,
-    modalImageDescription: string,
-    link: string,
-    modalBackgroundColor: string,
-}
 
 
 const ProjectsList = () => {
