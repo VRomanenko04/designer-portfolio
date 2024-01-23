@@ -3,6 +3,7 @@ import project2Img from './assets/ProjectsImages/project_main_img_2.png';
 import project3Img from './assets/ProjectsImages/project_main_img_3.png';
 import project4Img from './assets/ProjectsImages/project_main_img_4.png';
 import project_cruxclimbing_preview from './assets/ProjectsImages/project_cruxclimbing_preview.png';
+import project_liquidanim_preview from './assets/ProjectsImages/project_liquidanim_preview.png';
 
 export interface IProject {
     title: string,
@@ -85,6 +86,21 @@ export const projects = [
         modalBackgroundColor: '#D9D9D9'
     },
     {
+        title: 'Liquid animatoin',
+        types: ['Show all', '2D & 3D', 'Animations', 'Personal Projects', 'Personal..',  ],
+        shortDescription: 'Liquid animation in after effects',
+        modalDescription: 'this animation was used as backgroung for screen subtitels',
+        image: project_liquidanim_preview,
+        imageDescription: 'Liquid animation in after effects',
+        modalImage: project_liquidanim_preview,
+        modalImageDescription: 'Liquid animation in after effects',
+        showBeLink: true,
+        linkBe: 'https://www.behance.net/gallery/189763131/Liquid-animation',
+        showYTLink: false,
+        linkYT: '',
+        modalBackgroundColor: '#000111'
+    }
+    {
         title: 'Crux Climbing',
         types: ['Show all', '2D & 3D', 'Projects for clients', 'Commercial', 'Other'],
         shortDescription: 'Logo design for Rock Climbing business in Birmingham',
@@ -95,7 +111,7 @@ export const projects = [
         modalImageDescription: 'Logo design for Rock Climbing business.',
         showBeLink: true,
         linkBe: 'https://www.behance.net/gallery/189663897/Crux-Climbing-(PROTOTYPE)',
-        showYTLink: true,
+        showYTLink: false,
         linkYT: '',
         modalBackgroundColor: '#FDD700'
     }
