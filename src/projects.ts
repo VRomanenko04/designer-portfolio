@@ -95,7 +95,7 @@ export const projects = [
         modalImageDescription: 'Logo design for Rock Climbing business.',
         showBeLink: true,
         link: 'https://www.behance.net/gallery/189663897/Crux-Climbing-(PROTOTYPE)',
-        showYTLink: false,
+        showYTLink: true,
         linkYT: '',
         modalBackgroundColor: '#FDD700'
     }
