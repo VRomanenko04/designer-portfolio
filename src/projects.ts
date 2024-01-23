@@ -88,7 +88,7 @@ export const projects = [
         title: 'Crux Climbing',
         types: ['Show all', '2D & 3D', 'Projects for clients', 'Commercial', 'Other'],
         shortDescription: 'Logo design for Rock Climbing business in Birmingham',
-        modalDescription: 'Logo design for Rock Climbing business in Birmingham. Crux Climbing is an indoor rock climbing business located in Birmingham, UK. The shown logo design was created for its owner, Jordan, during our time together in the same business development course.  ',
+        modalDescription: 'Crux Climbing is an indoor rock climbing business located in Birmingham, UK. The shown logo design was created for its owner, Jordan, during our time together in the same business development course.  ',
         image: project_cruxclimbing_preview,
         imageDescription: 'Logo design for Rock Climbing business.',
         modalImage: project_cruxclimbing_preview,
