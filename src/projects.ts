@@ -2,7 +2,7 @@ import project1Img from './assets/ProjectsImages/project_main_img_1.png';
 import project2Img from './assets/ProjectsImages/project_main_img_2.png';
 import project3Img from './assets/ProjectsImages/project_main_img_3.png';
 import project4Img from './assets/ProjectsImages/project_main_img_4.png';
-import project_cruxclimbing_preview from './assets/ProjectsImages/project_main_img_4.png';
+import project_cruxclimbing_preview from './assets/ProjectsImages/project_cruxclimbing_preview.png';
 
 export interface IProject {
     title: string,
