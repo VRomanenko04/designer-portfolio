@@ -2,6 +2,7 @@ import project1Img from './assets/ProjectsImages/project_main_img_1.png';
 import project2Img from './assets/ProjectsImages/project_main_img_2.png';
 import project3Img from './assets/ProjectsImages/project_main_img_3.png';
 import project4Img from './assets/ProjectsImages/project_main_img_4.png';
+import project_cruxclimbing_preview from './assets/ProjectsImages/project_main_img_4.png';
 
 export interface IProject {
     title: string,
@@ -83,4 +84,17 @@ export const projects = [
         linkYT: '',
         modalBackgroundColor: '#D9D9D9'
     },
+    {
+        title: 'Crux Climbing',
+        types: ['Show all', '2D & 3D', 'Projects for clients', 'Commercial', 'Other'],
+        shortDescription: 'Logo design for Rock Climbing business in Birmingham',
+        modalDescription: 'Logo design for Rock Climbing business in Birmingham. Crux Climbing is an indoor rock climbing business located in Birmingham, UK. The shown logo design was created for its owner, Jordan, during our time together in the same business development course.  ',
+        image: project_cruxclimbing_preview,
+        imageDescription: 'Logo design for Rock Climbing business.',
+        showBeLink: true,
+        link: 'https://www.behance.net/gallery/189663897/Crux-Climbing-(PROTOTYPE)',
+        showYTLink: false,
+        linkYT: '',
+        modalBackgroundColor: '#FDD700'
+    }
 ]
