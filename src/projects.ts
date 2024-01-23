@@ -49,7 +49,7 @@ export const projects = [
         modalImage: project2Img,
         modalImageDescription: 'Lorem ipsum dolor sit.',
         showBeLink: true,
-        link: 'https://www.behance.net/gallery/166320053/text-stylesation',
+        linkBe: 'https://www.behance.net/gallery/166320053/text-stylesation',
         showYTLink: false,
         linkYT: '',
         modalBackgroundColor: '#000'
@@ -64,7 +64,7 @@ export const projects = [
         modalImage: project3Img,
         modalImageDescription: 'Lorem ipsum dolor sit.',
         showBeLink: true,
-        link: 'https://www.behance.net/gallery/166320053/text-stylesation',
+        linkBe: 'https://www.behance.net/gallery/166320053/text-stylesation',
         showYTLink: false,
         linkYT: '',
         modalBackgroundColor: '#D9D9D9'
@@ -79,7 +79,7 @@ export const projects = [
         modalImage: project4Img,
         modalImageDescription: 'Lorem ipsum dolor sit.',
         showBeLink: true,
-        link: 'https://www.behance.net/gallery/166320053/text-stylesation',
+        linkBe: 'https://www.behance.net/gallery/166320053/text-stylesation',
         showYTLink: false,
         linkYT: '',
         modalBackgroundColor: '#D9D9D9'
@@ -94,7 +94,7 @@ export const projects = [
         modalImage: project_cruxclimbing_preview,
         modalImageDescription: 'Logo design for Rock Climbing business.',
         showBeLink: true,
-        link: 'https://www.behance.net/gallery/189663897/Crux-Climbing-(PROTOTYPE)',
+        linkBe: 'https://www.behance.net/gallery/189663897/Crux-Climbing-(PROTOTYPE)',
         showYTLink: true,
         linkYT: '',
         modalBackgroundColor: '#FDD700'
