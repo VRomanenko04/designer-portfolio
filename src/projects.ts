@@ -87,7 +87,7 @@ export const projects = [
     },
     {
         title: 'Liquid animatoin',
-        types: ['Show all', '2D & 3D', 'Animations', 'Personal Projects', 'Personal..',  ],
+        types: ['Show all', '2D & 3D', 'Animations', 'Personal Projects', 'Personal..'],
         shortDescription: 'Liquid animation in after effects',
         modalDescription: 'this animation was used as backgroung for screen subtitels',
         image: project_liquidanim_preview,
@@ -99,7 +99,7 @@ export const projects = [
         showYTLink: false,
         linkYT: '',
         modalBackgroundColor: '#000111'
-    }
+    },
     {
         title: 'Crux Climbing',
         types: ['Show all', '2D & 3D', 'Projects for clients', 'Commercial', 'Other'],
