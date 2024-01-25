@@ -42,6 +42,7 @@
 
         .background__img {
             position: absolute;
+            object-fit: contain;
             top: 0;
             left: 0;
             width: 100%;
@@ -83,6 +84,7 @@
 
         .project__container {
             width: calc(100vw - 30px);
+            height: 35vh;
 
             .content__position {
                 bottom: 5px;
@@ -124,6 +126,7 @@
         .background__img {
             width: 50%;
             height: 500px;
+            object-fit: contain;
         }
 
         .content__position {
@@ -162,12 +165,16 @@
         .project__container {
             .background__img {
                 height: auto;
+                object-fit: contain;
             }
 
             .content__position {
                 padding-left: 0;
                 flex-direction: row;
                 align-items: center;
+                justify-content: space-between;
+                margin-right: 10%;
+                margin-left: 20px;
         
                 .description {
                     display: none;
