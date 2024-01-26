@@ -4,6 +4,7 @@ import project3Img from './assets/ProjectsImages/project_main_img_3.png';
 import project4Img from './assets/ProjectsImages/project_main_img_4.png';
 import project_cruxclimbing_preview from './assets/ProjectsImages/project_cruxclimbing_preview.png';
 import project_liquidanim_preview from './assets/ProjectsImages/project_liquidanim_preview.png';
+import project_7menebo_preview from './assets/ProjectsImages/project_7menebo_preview.png'
 
 export interface IProject {
     title: string,
@@ -114,5 +115,20 @@ export const projects = [
         showYTLink: false,
         linkYT: '',
         modalBackgroundColor: '#FDD700'
+    },
+    {
+        title: 'Event agency "Seventh heaven"',
+        types: ['Show all', '2D & 3D', 'Projects for clients', 'Commercial', 'Other'],
+        shortDescription: 'Logo design for Ukrainian Event agency business',
+        modalDescription: 'Seventh heaven is Ukrainian Event agency specializing in childrens parties and birthdays  ',
+        image: project_7menebo_preview,
+        imageDescription: 'Event agency "Seventh heaven"',
+        modalImage: project_7menebo_preview,
+        modalImageDescription: 'Event agency "Seventh heaven"',
+        showBeLink: true,
+        linkBe: 'https://www.behance.net/gallery/189959235/Event-agency-Seventh-heaven',
+        showYTLink: false,
+        linkYT: '',
+        modalBackgroundColor: '#FFFFFF'
     }
 ]
