@@ -136,7 +136,7 @@ export const projects = [
         title: 'Jesus Teens - stylized text',
         types: ['Show all', 'Projects for clients', 'Commercial', 'Other', 'Typography', 'Typogr..', ],
         shortDescription: 'Stylezed text for teen team at church "Word of life"',
-        modalDescription: 'Custom text ztylezation for teenager team at church "Word of life" in Kharkiv  ',
+        modalDescription: 'Word of Life - is a megachurch in Uppsala (Sweden) and an international association of churches, within the Swedish Word of Faith movement.',
         image: project_wolkh_preview,
         imageDescription: 'Jesus Teens - stylized text',
         modalImage: project_wolkh_preview,
