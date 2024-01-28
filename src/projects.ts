@@ -4,7 +4,8 @@ import project3Img from './assets/ProjectsImages/project_main_img_3.png';
 import project4Img from './assets/ProjectsImages/project_main_img_4.png';
 import project_cruxclimbing_preview from './assets/ProjectsImages/project_cruxclimbing_preview.png';
 import project_liquidanim_preview from './assets/ProjectsImages/project_liquidanim_preview.png';
-import project_7menebo_preview from './assets/ProjectsImages/project_7menebo_preview.png'
+import project_7menebo_preview from './assets/ProjectsImages/project_7menebo_preview.png';
+import project_wolkh_preview from './assets/ProjectsImages/project_wolkh_preview.png';
 
 export interface IProject {
     title: string,
@@ -103,7 +104,7 @@ export const projects = [
     },
     {
         title: 'Crux Climbing',
-        types: ['Show all', '2D & 3D', 'Projects for clients', 'Commercial', 'Other'],
+        types: ['Show all', 'Projects for clients', 'Commercial', 'Other'],
         shortDescription: 'Logo design for Rock Climbing business in Birmingham',
         modalDescription: 'Crux Climbing is an indoor rock climbing business located in Birmingham, UK. The shown logo design was created for its owner, Jordan, during our time together in the same business development course.  ',
         image: project_cruxclimbing_preview,
@@ -118,7 +119,7 @@ export const projects = [
     },
     {
         title: 'Event agency "Seventh heaven"',
-        types: ['Show all', '2D & 3D', 'Projects for clients', 'Commercial', 'Other'],
+        types: ['Show all', 'Projects for clients', 'Commercial', 'Other'],
         shortDescription: 'Logo design for Ukrainian Event agency business',
         modalDescription: 'Seventh heaven is Ukrainian Event agency specializing in childrens parties and birthdays  ',
         image: project_7menebo_preview,
@@ -130,5 +131,20 @@ export const projects = [
         showYTLink: false,
         linkYT: '',
         modalBackgroundColor: '#FFFFFF'
-    }
+    },
+    {
+        title: 'Jesus Teens - stylized text',
+        types: ['Show all', 'Projects for clients', 'Commercial', 'Other', 'Typography', 'Typogr..', ],
+        shortDescription: 'Stylezed text for teen team at church "Word of life"',
+        modalDescription: 'Custom text ztylezation for teenager team at church "Word of life" in Kharkiv  ',
+        image: project_wolkh_preview,
+        imageDescription: 'Jesus Teens - stylized text',
+        modalImage: project_wolkh_preview,
+        modalImageDescription: 'Jesus Teens - stylized text',
+        showBeLink: true,
+        linkBe: 'https://www.behance.net/gallery/190098591/Jesus-Teens-stylized-text',
+        showYTLink: false,
+        linkYT: '',
+        modalBackgroundColor: '#FFFFFF'
+    },
 ]
