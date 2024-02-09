@@ -98,7 +98,7 @@ export const projects = [
         modalImage: project_sm_preview,
         modalImageDescription: 'Spider-man - stylized text',
         showBeLink: true,
-        linkBe: 'https://www.behance.net/gallery/190098591/Jesus-Teens-stylized-text',
+        linkBe: 'https://www.behance.net/gallery/191108503/SPIDER-MAN-stylized-text',
         showYTLink: false,
         linkYT: '',
         modalBackgroundColor: '#b20000'
