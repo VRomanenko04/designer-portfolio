@@ -6,7 +6,7 @@ import project_cruxclimbing_preview from './assets/ProjectsImages/project_cruxcl
 import project_liquidanim_preview from './assets/ProjectsImages/project_liquidanim_preview.png';
 import project_7menebo_preview from './assets/ProjectsImages/project_7menebo_preview.png';
 import project_wolkh_preview from './assets/ProjectsImages/project_wolkh_preview.png';
-import project_sm_preview from '.assets/ProjectsImages/project_sm_preview.png';
+import project_sm_preview from './assets/ProjectsImages/project_sm_preview.png';
 
 export interface IProject {
     title: string,
@@ -98,10 +98,10 @@ export const projects = [
         modalImage: project_sm_preview,
         modalImageDescription: 'Spider-man - stylized text',
         showBeLink: true,
-        linkBe: 'https://www.behance.net/gallery/191108503/SPIDER-MAN-stylized-text',
+        linkBe: 'https://www.behance.net/gallery/190098591/Jesus-Teens-stylized-text',
         showYTLink: false,
         linkYT: '',
-        modalBackgroundColor: '#b20000'
+        modalBackgroundColor: '#FFFFFF'
     },
     {
         title: 'Liquid animatoin',
