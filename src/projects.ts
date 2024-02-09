@@ -6,6 +6,7 @@ import project_cruxclimbing_preview from './assets/ProjectsImages/project_cruxcl
 import project_liquidanim_preview from './assets/ProjectsImages/project_liquidanim_preview.png';
 import project_7menebo_preview from './assets/ProjectsImages/project_7menebo_preview.png';
 import project_wolkh_preview from './assets/ProjectsImages/project_wolkh_preview.png';
+import project_sm_preview from '.assets/ProjectsImages/project_sm_preview.png';
 
 export interface IProject {
     title: string,
@@ -88,6 +89,21 @@ export const projects = [
         modalBackgroundColor: '#D9D9D9'
     },
     {
+        title: 'Spider-man - stylized text',
+        types: ['Show all','Personal Projects', 'Personal..' , 'Other', 'Typography', 'Typogr..', ],
+        shortDescription: 'Stylezed text inspired Spider-man animated movie',
+        modalDescription: 'I become a huge fan of animated SM movie because of it unique style, so I tried to recreate text style from movie poster',
+        image: project_sm_preview,
+        imageDescription: 'SM - stylized text',
+        modalImage: project_sm_preview,
+        modalImageDescription: 'Spider-man - stylized text',
+        showBeLink: true,
+        linkBe: 'https://www.behance.net/gallery/191108503/SPIDER-MAN-stylized-text',
+        showYTLink: false,
+        linkYT: '',
+        modalBackgroundColor: '#b20000'
+    },
+    {
         title: 'Liquid animatoin',
         types: ['Show all', '2D & 3D', 'Animations', 'Personal Projects', 'Personal..'],
         shortDescription: 'Liquid animation in after effects',
@@ -147,4 +163,5 @@ export const projects = [
         linkYT: '',
         modalBackgroundColor: '#FFFFFF'
     },
+    
 ]
