@@ -101,7 +101,7 @@ export const projects = [
         linkBe: 'https://www.behance.net/gallery/190098591/Jesus-Teens-stylized-text',
         showYTLink: false,
         linkYT: '',
-        modalBackgroundColor: '#FFFFFF'
+        modalBackgroundColor: '#b20000'
     },
     {
         title: 'Liquid animatoin',
